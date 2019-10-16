@@ -10,7 +10,7 @@ class DianpingPipeline(object):
     def __init__(self, dbargs):
         self.dbargs = dbargs
         
-        self.insertQuestionSql = r"""INSERT INTO `cumt` 
+        self.insertQuestionSql = r"""INSERT INTO `safehoo` 
         (`accidentId`,`accidentName`,`country`,`province`,`accidentClass`,`accidentType`,`accidentDate`,`accidentNoon`,`accidentHour`,`accidentDescription` ) 
         VALUES 
         (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s);
